@@ -60,6 +60,22 @@ public class Taller1NataliaMuñozManzo {
 
     }
 
-
+    public static void libros() {
+        Scanner entrada = new Scanner(System.in);
+        List<String> listaLibr = new ArrayList<String>();
+        System.out.println("Digite el nombre del libro deseado");
+        String libro = entrada.nextLine();
+//        while(lista >= "20"){
+        System.out.println(listaLibr.add(libro));
+        if (libro.equals(listaLibr)) {
+            System.out.println("1.Alquilar. 2.Comprar");
+            int opcion = entrada.nextInt();
+            if (opcion == 1) {
+                System.out.println("Ha alquilado un libro");
+            } else {
+                System.out.println("Ha comprado el libro");
+            }
+        }
+    }
 
 }
